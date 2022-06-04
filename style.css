@@ -16,17 +16,27 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    background-image: url('./images/header.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 /* Navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 3rem;
-    background-color: skyblue;
+    background-color: darkslategrey;
 }
 
 .navbar ul {
@@ -47,8 +57,36 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #333;
-    color: skyblue
+    background-color: darksalmon;
+    color: darkslategrey;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    /* margin: 10rem 0; */
+    font-size: 40px;
+}
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: darksalmon;
+    background-color: whitesmoke;
+    padding: 2rem;
+}
+
+.header span {
+    margin-top: -5rem;
+    margin-left: -11.3rem;
+    color: darkslategrey
 }
 
 /* Brevet */
@@ -56,9 +94,68 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: darksalmon;
+}
+
+.brevet h1 {
+    color: darkslategrey;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.route-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     width: 100%;
-    /* background-color: #333; */
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.info-card h2 {
+    font-size: 1.7rem;
+}
+
+.info-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 15vh;
+
+}
+
+.info-card-body i {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 2rem;
+    color: darkslategray
+}
+
+.info-card-body span {
+    margin: 0 2rem;
+    color: darksalmon;
 }
 
 .frame-card {
@@ -67,21 +164,43 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 1rem;
+    background-color: darkslategrey;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.arrow {
-    font-size: 40px;
+.arrow h1 {
+    font-size: 4.5rem;
     font-weight: bold;
 }
 
 .frame-card-header {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: darkslategrey;
     color: white;
     width: 100%;
     padding: .5rem 0;
+}
+
+.frame-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.frame-card-body p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.frame-card-body iframe {
+    padding: 0;
+    margin: 0;
+    height: 20vh;
+    width: 22rem;
 }
 
 /* Iskustva */

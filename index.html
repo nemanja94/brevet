@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GRID</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav id="naslovna" class="navbar">
+    <nav class="navbar sticky">
         <ul>
             <li><a href="#naslovna">Naslovna</a></li>
             <li><a href="#brevet">Brevet</a></li>
@@ -21,38 +24,62 @@
     </nav>
     <!-- Navbar -->
 
+    <!-- Header -->
+    <div id="naslovna" class="header">
+        <h1>Lazarevacki <br> <span>brevet</span></h1>
+    </div>
+    <!-- Header -->
+
     <!-- Brevet -->
     <div id="brevet" class="brevet">
-        <div class="frame-card">
-            <div class="frame-card-header">
-                <h2>Pocetak breveta</h2>
+        <h1>Ruta breveta</h1>
+        <div class="route-cards">
+            <div class="frame-card">
+                <div class="frame-card-header">
+                    <h2>Start breveta</h2>
+                </div>
+                <div class="frame-card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.112144145803!2d20.23623705177329!3d44.38981961239956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a0205f31eeb9b%3A0x4e09c90adfb4421!2z0J7Rh9Cw0LPQsA!5e0!3m2!1ssr!2srs!4v1654340723768!5m2!1ssr!2srs"
+                        width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Jezero Ocaga</p>
+                </div>
             </div>
-            <div class="frame-card-body">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.112144145803!2d20.23623705177329!3d44.38981961239956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a0205f31eeb9b%3A0x4e09c90adfb4421!2z0J7Rh9Cw0LPQsA!5e0!3m2!1ssr!2srs!4v1654340723768!5m2!1ssr!2srs"
-                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="arrow">
+                <h1>-></h1>
+            </div>
+            <div class="frame-card">
+                <div class="frame-card-header">
+                    <h2>Cilj breveta</h2>
+                </div>
+                <div class="frame-card-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.341344418324!2d19.965583751768307!3d44.0969482315366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759dd1b2cea2173%3A0x193f0a803b9609a8!2z0J_QsNGZ0LHQsA!5e0!3m2!1ssr!2srs!4v1654340759931!5m2!1ssr!2srs"
+                        width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Divcibare</p>
+                </div>
             </div>
         </div>
-        <div class="arrow">
-            <h1>-></h1>
-        </div>
-        <div class="frame-card">
-            <div class="frame-card-header">
-                <h2>Cilj breveta</h2>
-            </div>
-            <div class="frame-card-body">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.341344418324!2d19.965583751768307!3d44.0969482315366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759dd1b2cea2173%3A0x193f0a803b9609a8!2z0J_QsNGZ0LHQsA!5e0!3m2!1ssr!2srs!4v1654340759931!5m2!1ssr!2srs"
-                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="frame-card-header">
+                    <h2>Pocetak breveta</h2>
+                </div>
+                <div class="info-card-body">
+                    <i class="fa-solid fa-calendar-day"><span>3. jul</span></i>
+                    <i class="fa-solid fa-clock"><span>08:00</span></i>
+                </div>
             </div>
         </div>
+
     </div>
     <!-- Brevet -->
 
     <!-- Iskustva -->
-    <div class="testemonials">
+    <div id="iskustva" class="testemonials">
         <div class="card card--bg-purple">
             <header class="card__header">
                 <img src="images/image-daniel.jpg" alt="asd" class="card__img">
