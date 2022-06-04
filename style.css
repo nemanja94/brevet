@@ -13,8 +13,9 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 1.7;
     font-size: 13px;
+    height: 100vh;
     display: grid;
-    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-rows: repeat(4, 1fr);
 }
 
 
@@ -51,7 +52,37 @@ body {
 }
 
 /* Brevet */
+.brevet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: #333; */
+}
 
+.frame-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.arrow {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.frame-card-header {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: .5rem 0;
+}
 
 /* Iskustva */
 .testemonials {
