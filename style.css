@@ -148,7 +148,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin: 1rem;
-    width: 50%;
+    width: auto;
     background-color: whitesmoke;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
