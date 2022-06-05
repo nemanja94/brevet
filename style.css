@@ -18,7 +18,7 @@ body {
     /* align-items: center;
     justify-content: center; */
     /* grid-template-rows: repeat(4, 1fr); */
-    background-image: url('./images/header.jpg');
+    background-image: url('./images/img3.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,49 +81,6 @@ nav ul li a:hover {
     display: none;
 }
 
-/* .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 3rem;
-    background-color: darkslategrey;
-}
-
-
-#ham-btn,
-#x-btn {
-    display: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 2rem;
-    color: darksalmon;
-}
-
-.navbar ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar ul li {
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-.navbar ul li a {
-    margin: .5rem;
-    padding: .7rem 2rem;
-    text-decoration: none;
-    color: #fff;
-}
-
-.navbar ul li a:hover {
-    background-color: darksalmon;
-    color: darkslategrey;
-} */
-
 /* Header */
 .header {
     display: flex;
@@ -142,14 +99,14 @@ nav ul li a:hover {
     flex-direction: column;
     text-align: center;
     color: darksalmon;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 2rem;
 }
 
 .header span {
     margin-top: -5rem;
     margin-left: -11.3rem;
-    color: darkslategrey
+    color: white;
 }
 
 /* Brevet */
@@ -160,12 +117,12 @@ nav ul li a:hover {
     flex-direction: column;
     width: 100%;
     padding: 2rem 0;
-    background-color: darksalmon;
+    /* background-color: darksalmon; */
 }
 
 .brevet h1 {
-    color: darkslategrey;
-    font-size: 40px;
+    color: white;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -206,7 +163,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 15vh;
+    height: auto;
 }
 
 .info-card-body i {
