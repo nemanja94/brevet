@@ -104,8 +104,8 @@ nav ul li a:hover {
 }
 
 .header span {
-    margin-top: -5rem;
-    margin-left: -11.3rem;
+    margin-top: -8rem;
+    margin-left: -18rem;
     color: white;
 }
 
@@ -148,7 +148,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin: 1rem;
-    width: 100%;
+    width: 50%;
     background-color: whitesmoke;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
@@ -164,6 +164,7 @@ nav ul li a:hover {
     flex-direction: row;
     flex-wrap: nowrap;
     height: auto;
+    padding: 2rem 0;
 }
 
 .info-card-body i {
