@@ -10,6 +10,7 @@
 
 body {
     background-image: url('./images/img3.jpeg');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -104,11 +105,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
     padding: 2rem 0;
     width: 100%;
+}
+
+.info-card-body div {
+    margin-bottom: 1rem;
 }
 
 .info-card-body i {
@@ -128,9 +133,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem ;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    width: 50%;
+    width: 45%;
 }
 
 .frame-card-header {
@@ -172,6 +177,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+    /* background-color: red; */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .card {
