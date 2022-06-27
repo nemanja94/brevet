@@ -109,10 +109,14 @@ body {
     flex-wrap: nowrap;
     height: auto;
     padding: 2rem 0;
-    width: 100%;    
+    width: 100%;
 }
 
 .info-card-body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     margin-bottom: 1rem;
 }
 
@@ -268,7 +272,21 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .info-card {
+        justify-content: center;
+        align-items: center;
+    }
+    .info-card-body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-card-body div {
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 @media only screen and (min-width: 600px) {}
 
