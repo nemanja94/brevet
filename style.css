@@ -9,77 +9,18 @@
 }
 
 body {
-    background: #edf2f8;
+    background-image: url('./images/img3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 1.7;
     font-size: 13px;
-    height: 100vh;
-    display: grid;
-    /* align-items: center;
-    justify-content: center; */
-    /* grid-template-rows: repeat(4, 1fr); */
-    background-image: url('./images/img3.jpeg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-
-/* Navbar */
-nav {
-    background-color: #0082e6;
-    height: 3rem;
-    width: 100%;
-    z-index: 9999;
-}
-
-label.logo {
-    color: white;
-    font-size: 2rem;
-    line-height: 3rem;
-    padding: 0 1.5rem;
-    font-weight: bold;
-}
-
-nav ul {
-    float: right;
-    margin-right: 1rem;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 3rem;
-    margin: 0 .5rem;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 1rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-    background-color: #1b9bff;
-    transition: .5s;
-}
-
-.checkBtn {
-    font-size: 2.3rem;
-    color: white;
-    float: right;
-    line-height: 3rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
 }
 
 /* Header */
@@ -122,6 +63,7 @@ nav ul li a:hover {
 }
 
 .brevet h1 {
+    text-align: center;
     color: white;
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -166,6 +108,7 @@ nav ul li a:hover {
     flex-wrap: nowrap;
     height: auto;
     padding: 2rem 0;
+    width: 100%;
 }
 
 .info-card-body i {
@@ -186,13 +129,8 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin: 1rem;
-    background-color: darkslategrey;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
-
-.arrow h1 {
-    font-size: 4.5rem;
-    font-weight: bold;
+    width: 50%;
 }
 
 .frame-card-header {
@@ -211,6 +149,7 @@ nav ul li a:hover {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .frame-card-body p {
@@ -372,8 +311,8 @@ footer {
         justify-content: space-between;
     }
 
-    .arrow {
-        transform: rotate(90deg);
+    .info-card {
+        width: 95%;
     }
 
     .info-card-body {
@@ -391,6 +330,11 @@ footer {
     .info-card-body span {
         margin: 0 1.5rem;
         padding: 0;
+    }
+
+    .frame-card {
+        width: 95%;
+        margin: 1rem 0;
     }
 
 }
