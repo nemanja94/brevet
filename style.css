@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('./images/img3.jpeg');
+    background-image: url('./images/background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
 }
 
 .info-cards {
@@ -83,13 +83,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
 }
 
 .info-card {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
     flex-direction: column;
     margin: 1rem;
     width: auto;
@@ -103,13 +103,13 @@ body {
 
 .info-card-body {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
     padding: 2rem 0;
-    width: 100%;
+    width: 100%;    
 }
 
 .info-card-body div {
@@ -118,9 +118,9 @@ body {
 
 .info-card-body i {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0 2rem;
-    color: darkslategray
+    color: darkslategray;
 }
 
 .info-card-body span {
@@ -128,12 +128,18 @@ body {
     color: darksalmon;
 }
 
+.info-card-body span a {
+    text-decoration: none;
+    color: darksalmon;
+    cursor: pointer;
+}
+
 .frame-card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 1rem ;
+    margin: 1rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     width: 45%;
 }
@@ -266,9 +272,14 @@ footer {
 
 @media only screen and (min-width: 600px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .info-card-body i {
+        font-size: 1.8rem;
+    }
+}
 
 @media only screen and (max-width: 992px) {
+
     label.logo {
         font-size: 2rem;
         padding-left: 2rem;
@@ -333,6 +344,7 @@ footer {
     .info-card-body i {
         margin: 1rem 0;
         padding: 0;
+        font-size: 1.9rem;
     }
 
     .info-card-body span {
@@ -341,7 +353,7 @@ footer {
     }
 
     .frame-card {
-        width: 95%;
+        width: 100%;
         margin: 1rem 0;
     }
 
