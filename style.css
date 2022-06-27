@@ -277,14 +277,20 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     .info-card-body {
         justify-content: center;
         align-items: center;
     }
 
     .info-card-body div {
+        padding-left: 1rem;
         align-items: center;
         justify-content: center;
+    }
+
+    .info-card-body div i {
+        font-size: 1.7rem;
     }
 }
 
